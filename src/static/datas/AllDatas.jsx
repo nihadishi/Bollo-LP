@@ -153,10 +153,10 @@ export const ALLDATAS = [
     },
     Footer: {
       Contact: {
-        name: "Əlaqə:",
-        email: "Email ünvanı: nbees@gmail.com",
-        number: "Mobil nömrə: +994 xx xxx xx xx",
-        privacy: "Gizlilik siyasəti",
+        name: "Контакт:",
+        email: "Адрес электронной почты: nbees@gmail.com",
+        number: "Номер мобильного телефона: +994 xx xxx xx xx",
+        privacy: "Политика конфиденциальности",
       },
       Copyright: {
         title: "Powered by ",

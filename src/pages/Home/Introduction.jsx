@@ -3,16 +3,23 @@ import "./style.scss";
 import Logo from "./img/bollo-logo.png";
 import { ALLDATAS } from "../../static/datas/AllDatas";
 import bg_M from "./img/bg2.png";
-const ScrollFunc = (navigation) =>{
+export const ScrollFunc = (navigation) =>{
   switch (navigation) {
-    case 'Home':
+    case 'Nav':
       document.querySelector('.Nav').scrollIntoView({ behavior: 'smooth' });
+      break;
+    case 'Home':
+      document.querySelector('.Int').scrollIntoView({ behavior: 'smooth' });
       break;
     case 'About':
       document.querySelector('.Ab').scrollIntoView({ behavior: 'smooth' });
       break;
     case 'Questions':
       document.querySelector('.Que').scrollIntoView({ behavior: 'smooth' });
+      break;
+    case 'Footer':
+      document.querySelector('.Foo').scrollIntoView({ behavior: 'smooth' });
+      break;
   }
 }
 const Introduction = (props) => {
@@ -29,7 +36,7 @@ const Introduction = (props) => {
           </div>
           <div className="Intro-Nav-Navbar">
             <ul className="Intro-Nav-Navbar-ul">
-              <li className="Intro-Nav-Navbar-ul-li" onClick={()=>{ScrollFunc('Home')}}>{ALLDATAS[props.lang].HomePage?.Home}</li>
+              <li className="Intro-Nav-Navbar-ul-li" onClick={()=>{ScrollFunc('Nav')}}>{ALLDATAS[props.lang].HomePage?.Home}</li>
               <li className="Intro-Nav-Navbar-ul-li" onClick={()=>{ScrollFunc('About')}}>{ALLDATAS[props.lang].HomePage?.About}</li>
               <li className="Intro-Nav-Navbar-ul-li" onClick={()=>{ScrollFunc('Questions')}}>{ALLDATAS[props.lang].HomePage?.Questions}</li>
             </ul>

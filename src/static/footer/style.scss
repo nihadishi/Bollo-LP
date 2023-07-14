@@ -2,7 +2,7 @@
 @import "../media-screen/tablet.scss";
 .Foo {
   background-color: #f1fcf3;
-  height: 552px;
+  height: 582px;
   width: 100%;
   margin-top: 130px;
   padding: 36px 0 36px 0;
@@ -46,6 +46,7 @@
           font-style: normal;
           font-weight: 500;
           line-height: 31px;
+          text-align: center;
         }
       }
     }
@@ -64,7 +65,7 @@
       &-Copyright {
         display: flex;
         flex-direction: row;
-        padding: 34px 0 34px 0;
+        padding: 34px 0 0px 0;
         &-title {
           color: var(--text-950, #161616);
           font-size: 20px;
